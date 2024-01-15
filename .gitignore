@@ -1,2 +1,9 @@
 # .gitignore
 node_modules
+resources
+index.html
+package-lock.json
+package.json
+postcss.config.js
+tailwind.config.js
+tailwind.css
