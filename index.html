@@ -6,11 +6,11 @@
     <link rel="stylesheet" href="./tailwind.css" />
     <title>Document</title>
   </head>
-  <body class="bg-slate-100 shadow">
+  <body class="bg-slate-100">
     <header class="bg-white px-6">
-      <div class="flex h-16 items-center justify-between">
+      <div class="flex h-16 max-w-6xl mx-auto items-center justify-between">
         <button
-          class="text-slate-500 rounded -ml-1 hover:bg-sky-500 hover:text-slate-100 focus:ring-2 focus:ring-slate-200 p-1"
+          class="text-slate-500 rounded -ml-1 hover:bg-sky-500 hover:text-slate-100 focus:ring-2 focus:ring-slate-200 p-1 transition-colors"
         >
           <svg
             class="w-6 h-6"
@@ -27,22 +27,46 @@
             />
           </svg>
         </button>
-        <a class="text-sky-500 duration-300 hover:rotate-12 -mr-4" href="#">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            class="w-6 h-6"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0M10.5 8.25h3l-3 4.5h3"
-            />
-          </svg>
-        </a>
+        <div class="flex items-center -mr-4">
+          <a class="text-sky-500 duration-300 hover:rotate-12" href="#">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0M10.5 8.25h3l-3 4.5h3"
+              />
+            </svg>
+          </a>
+          <div class="space-x-8 ml-8 hidden sm:flex">
+            <a
+              class="px-3 py-2 text-slate-600 hover:text-sky-500 transition-colors font-medium"
+              href=""
+              >Home</a
+            >
+            <a
+              class="px-3 py-2 text-slate-600 hover:text-sky-500 transition-colors font-medium"
+              href=""
+              >About</a
+            >
+            <a
+              class="px-3 py-2 text-slate-600 hover:text-sky-500 transition-colors font-medium"
+              href=""
+              >Blog</a
+            >
+            <a
+              class="px-3 py-2 text-slate-600 hover:text-sky-500 transition-colors font-medium"
+              href=""
+              >Contact</a
+            >
+          </div>
+        </div>
         <div class="flex">
           <button
             class="text-slate-500 rounded-full hover:text-sky-500 focus:ring-2 focus:ring-slate-200 mr-4"
@@ -73,6 +97,250 @@
           </button>
         </div>
       </div>
+      <div class="space-y-1 pb-3 pt-2 border-t sm:hidden font-medium hidden">
+        <a
+          class="bg-sky-500 block py-2 px-3 text-white rounded-md transition-colors"
+          href="#"
+          >Home</a
+        >
+        <a
+          class="text-slate-700 hover:bg-sky-500 block py-2 px-3 hover:text-white rounded-md transition-colors"
+          href="#"
+          >About</a
+        >
+        <a
+          class="text-slate-700 hover:bg-sky-500 block py-2 px-3 hover:text-white rounded-md transition-colors"
+          href="#"
+          >Blog</a
+        >
+        <a
+          class="text-slate-700 hover:bg-sky-500 block py-2 px-3 hover:text-white rounded-md transition-colors"
+          href="#"
+          >Contact</a
+        >
+      </div>
     </header>
+    <main class="p-4">
+      <div class="grid gap-4 max-w-sm mx-auto md:grid-cols-3 md:max-w-6xl">
+        <article class="shadow flex flex-col bg-white overflow-hidden rounded">
+          <div class="h-56">
+            <img
+              class="h-full w-full object-cover object-bottom"
+              src="/resources/article1.jpg"
+              alt="Tecnologia1"
+            />
+          </div>
+          <div class="p-5 space-y-3 flex-1">
+            <h3 class="font-semibold text-sky-500 text-sm">TailwindCSS</h3>
+            <h2 class="text-xl font-semibold leading-5 text-slate-800">
+              Desarrollando nuestra primer aplicacion web con TailwindCSS
+            </h2>
+            <p class="text-slate-500">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Inventore a excepturi consequuntur nesciunt ut commodi unde,
+              doloremque, placeat, libero reiciendis ipsum! Animi sequi possimus
+              laudantium culpa distinctio vitae maxime totam! Lorem ipsum dolor
+              sit amet consectetur, adipisicing elit. Quibusdam ab officiis
+              illum animi doloremque.
+            </p>
+          </div>
+          <div class="flex p-5 space-x-2">
+            <img
+              class="h-10 w-10 rounded-full"
+              src="https://ui-avatars.com/api?name=Frederic Morales"
+              alt="Frederic Morales"
+            />
+            <div class="flex flex-col justify-center">
+              <span class="text-sm text-slate-600 font-semibold leading-4"
+                >Frederic Soc Morales</span
+              >
+              <span class="text-sm text-slate-500 font-semibold"
+                >Ene 15, 2024</span
+              >
+            </div>
+          </div>
+        </article>
+        <article class="shadow flex flex-col bg-white overflow-hidden rounded">
+          <div class="h-56">
+            <img
+              class="h-full w-full object-cover object-bottom"
+              src="/resources/article2.jpg"
+              alt="Tecnologia1"
+            />
+          </div>
+          <div class="p-5 space-y-3 flex-1 flex flex-col justify-center">
+            <h3 class="font-semibold text-sky-500 text-sm">TailwindCSS</h3>
+            <h2 class="text-xl font-semibold leading-5 text-slate-800">
+              Desarrollando nuestra primer aplicacion web con TailwindCSS
+            </h2>
+            <p class="text-slate-500">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Inventore a excepturi consequuntur nesciunt ut commodi unde,
+              doloremque, placeat.
+            </p>
+          </div>
+          <div class="flex p-5 space-x-2">
+            <img
+              class="h-10 w-10 rounded-full"
+              src="https://ui-avatars.com/api?name=Frederic Morales"
+              alt="Frederic Morales"
+            />
+            <div class="flex flex-col justify-center">
+              <span class="text-sm text-slate-600 font-semibold leading-4"
+                >Frederic Soc Morales</span
+              >
+              <span class="text-sm text-slate-500 font-semibold"
+                >Ene 15, 2024</span
+              >
+            </div>
+          </div>
+        </article>
+        <article class="shadow flex flex-col bg-white overflow-hidden rounded">
+          <div class="h-56">
+            <img
+              class="h-full w-full object-cover object-bottom"
+              src="/resources/arcticle3.jpg"
+              alt="Tecnologia1"
+            />
+          </div>
+          <div class="p-5 space-y-3 flex-1 flex flex-col justify-center">
+            <h3 class="font-semibold text-sky-500 text-sm">TailwindCSS</h3>
+            <h2 class="text-xl font-semibold leading-5 text-slate-800">
+              Desarrollando nuestra primer aplicacion web con TailwindCSS
+            </h2>
+            <p class="text-slate-500">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Inventore a excepturi consequuntur nesciunt ut commodi unde,
+              doloremque, placeat, libero reiciendis ipsum! Animi sequi possimus
+              laudantium culpa distinctio vitae maxime totam!
+            </p>
+          </div>
+          <div class="flex p-5 space-x-2">
+            <img
+              class="h-10 w-10 rounded-full"
+              src="https://ui-avatars.com/api?name=Frederic Morales"
+              alt="Frederic Morales"
+            />
+            <div class="flex flex-col justify-center">
+              <span class="text-sm text-slate-600 font-semibold leading-4"
+                >Frederic Soc Morales</span
+              >
+              <span class="text-sm text-slate-500 font-semibold"
+                >Ene 15, 2024</span
+              >
+            </div>
+          </div>
+        </article>
+        <article class="shadow flex flex-col bg-white overflow-hidden rounded">
+          <div class="h-56">
+            <img
+              class="h-full w-full object-cover object-bottom"
+              src="/resources/article4.jpg"
+              alt="Tecnologia1"
+            />
+          </div>
+          <div class="p-5 space-y-3 flex-1 flex flex-col justify-center">
+            <h3 class="font-semibold text-sky-500 text-sm">TailwindCSS</h3>
+            <h2 class="text-xl font-semibold leading-5 text-slate-800">
+              Desarrollando nuestra primer aplicacion web con TailwindCSS
+            </h2>
+            <p class="text-slate-500">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Inventore a excepturi Consequatur veniam minima, eos aliquam
+              ducimus cumque blanditiis optio cum accusantium quod laudantium
+              corrupti et, consectetur temporibus necessitatibus natus illo.
+              Inventore, quis? Lorem ipsum dolor sit amet consectetur
+              adipisicing elit.
+            </p>
+          </div>
+          <div class="flex p-5 space-x-2">
+            <img
+              class="h-10 w-10 rounded-full"
+              src="https://ui-avatars.com/api?name=Frederic Morales"
+              alt="Frederic Morales"
+            />
+            <div class="flex flex-col justify-center">
+              <span class="text-sm text-slate-600 font-semibold leading-4"
+                >Frederic Soc Morales</span
+              >
+              <span class="text-sm text-slate-500 font-semibold"
+                >Ene 15, 2024</span
+              >
+            </div>
+          </div>
+        </article>
+        <article class="shadow flex flex-col bg-white overflow-hidden rounded">
+          <div class="h-56">
+            <img
+              class="h-full w-full object-cover object-bottom"
+              src="/resources/article5.jpg"
+              alt="Tecnologia1"
+            />
+          </div>
+          <div class="p-5 space-y-3 flex-1 flex flex-col justify-center">
+            <h3 class="font-semibold text-sky-500 text-sm">TailwindCSS</h3>
+            <h2 class="text-xl font-semibold leading-5 text-slate-800">
+              Desarrollando nuestra primer aplicacion web con TailwindCSS
+            </h2>
+            <p class="text-slate-500">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Inventore a excepturi consequuntur nesciunt ut commodi possimus
+              laudantium culpa distinctio vitae maxime totam!
+            </p>
+          </div>
+          <div class="flex p-5 space-x-2">
+            <img
+              class="h-10 w-10 rounded-full"
+              src="https://ui-avatars.com/api?name=Frederic Morales"
+              alt="Frederic Morales"
+            />
+            <div class="flex flex-col justify-center">
+              <span class="text-sm text-slate-600 font-semibold leading-4"
+                >Frederic Soc Morales</span
+              >
+              <span class="text-sm text-slate-500 font-semibold"
+                >Ene 15, 2024</span
+              >
+            </div>
+          </div>
+        </article>
+        <article class="shadow flex flex-col bg-white overflow-hidden rounded">
+          <div class="h-56">
+            <img
+              class="h-full w-full object-cover object-bottom"
+              src="/resources/article6.jpg"
+              alt="Tecnologia1"
+            />
+          </div>
+          <div class="p-5 space-y-3 flex-1 flex flex-col justify-center">
+            <h3 class="font-semibold text-sky-500 text-sm">TailwindCSS</h3>
+            <h2 class="text-xl font-semibold leading-5 text-slate-800">
+              Desarrollando nuestra primer aplicacion web con TailwindCSS
+            </h2>
+            <p class="text-slate-500">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Inventore a excepturi consequuntur nesciunt ut commodi unde,
+              doloremque, placeat, libero reiciendis ipsum! Animi sequi possimus
+              laudantium culpa distinctio vitae maxime totam!
+            </p>
+          </div>
+          <div class="flex p-5 space-x-2">
+            <img
+              class="h-10 w-10 rounded-full"
+              src="https://ui-avatars.com/api?name=Frederic Morales"
+              alt="Frederic Morales"
+            />
+            <div class="flex flex-col justify-center">
+              <span class="text-sm text-slate-600 font-semibold leading-4"
+                >Frederic Soc Morales</span
+              >
+              <span class="text-sm text-slate-500 font-semibold"
+                >Ene 15, 2024</span
+              >
+            </div>
+          </div>
+        </article>
+      </div>
+    </main>
   </body>
 </html>
