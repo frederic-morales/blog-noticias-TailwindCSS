@@ -1,8 +1,8 @@
 # .gitignore
 node_modules
 resources
-index.html
 package-lock.json
+index.html
 package.json
 postcss.config.js
 tailwind.config.js
