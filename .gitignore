@@ -1,9 +1,5 @@
 # .gitignore
 node_modules
 resources
-package-lock.json
 index.html
-package.json
-postcss.config.js
-tailwind.config.js
-tailwind.css
+
